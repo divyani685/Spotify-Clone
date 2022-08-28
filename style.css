@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+body {
+  background-color: rgb(192, 215, 221);
+  min-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Ubuntu", sans-serif;
+  height: 60px;
+  color: white;
+  background-color: black;
+  position: sticky;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+nav ul li {
+  padding: 7px 15px;
+}
+nav img {
+  display: flex;
+  width: 40px;
+  margin-top: 6px;
+  align-items: center;
+}
+.container {
+  height: 66vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 15px auto;
+  width: 70%;
+  padding: 22px;
+  border-radius: 10px;
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  flex-direction: row;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+#myProgressBar {
+  width: 70vw;
+  cursor: pointer;
+}
+.icons {
+  margin-top: 10px;
+}
+.icons i {
+  cursor: pointer;
+}
+.songbanner {
+  display: flex;
+  width: 45%;
+}
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItem img {
+  width: 50px;
+  margin: 20px;
+  align-items: center;
+  height: 45px;
+  border-radius: 34px;
+}
+.songItem:hover {
+  transform: scale(1.01);
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.songItemplay {
+  cursor: pointer;
+}
+.songinfo img {
+  opacity: 0;
+  transition: opacity is ease-in;
+}
+.songName {
+  font-size: 14px;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .songName {
+    font-size: 12px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+}
